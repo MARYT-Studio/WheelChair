@@ -1,6 +1,6 @@
 # WheelChair
 
-![logo](WheelChair%20Lib%20Logo.png)
+![logo](WheelChairLibLogo.png)
 
 ----
 
