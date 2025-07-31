@@ -1,0 +1,18 @@
+{
+  "required" : true,
+  "minVersion" : "0.8",
+  "package" : "world.maryt.wheelchair.mixins",
+  "compatibilityLevel" : "JAVA_8",
+  "refmap" : "wheelchair.refmap.json",
+  "mixins" : [
+  ],
+  "client" : [
+    "MixinSplashManager"
+  ],
+  "injectors" : {
+    "defaultRequire" : 1
+  },
+  "overwrites" : {
+    "requireAnnotations" : true
+  }
+}
