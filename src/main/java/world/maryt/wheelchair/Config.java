@@ -19,12 +19,12 @@ public class Config {
 
     public static boolean shouldNotifyPlayers;
     public static int mobShouldDieWithinThisAttacks;
-    public static double protectPlayersAtThisHP;
+    public static float protectPlayersAtThisHP;
 
     @SubscribeEvent
     static void onLoad(final ModConfigEvent event) {
         shouldNotifyPlayers = SHOULD_NOTIFY_PLAYERS.get();
         mobShouldDieWithinThisAttacks = MOB_SHOULD_DIE_WITHIN_THIS_ATTACKS.get();
-        protectPlayersAtThisHP = PROTECT_PLAYERS_AT_THIS_HP.get();
+        protectPlayersAtThisHP = PROTECT_PLAYERS_AT_THIS_HP.get().floatValue();
     }
 }
