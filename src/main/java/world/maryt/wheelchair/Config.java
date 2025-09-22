@@ -9,7 +9,7 @@ import net.minecraftforge.fml.event.config.ModConfigEvent;
 public class Config {
     private static final ForgeConfigSpec.Builder BUILDER = new ForgeConfigSpec.Builder();
 
-    private static final ForgeConfigSpec.BooleanValue SHOULD_NOTIFY_PLAYERS = BUILDER.comment("If true, Everytime WheelChair notify the player it is activated.").define("shouldNotifyPlayers", true);
+    private static final ForgeConfigSpec.BooleanValue SHOULD_NOTIFY_PLAYERS = BUILDER.comment("If true, enables all broadcast or notification like features.").define("shouldNotifyPlayers", false);
 
     private static final ForgeConfigSpec.IntValue MOB_SHOULD_DIE_WITHIN_THIS_ATTACKS = BUILDER.comment("Mob should be killed in this time of attacks.\nToo large value make battles very hard, now you have benn warned.").defineInRange("mobShouldDieWithinThisAttacks", 10, 0, 20);
 
